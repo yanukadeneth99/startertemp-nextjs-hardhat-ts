@@ -39,6 +39,8 @@ if(!pnpmExist) {
 }else {
   console.log("\x1b[32m%s\x1b[0m",`----- Pnpm exists. Moving on.`);
 }
+const pnpmPeer = runCommand(`pnpm config set auto-install-peers true`);
+if (!pnpmPeer) process.exit(1);
 
 
 // Installing the Front-end dependacies

@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Next JS Front-end Application",
   "keywords": [
     "frontend",
@@ -9,19 +9,14 @@
   ],
   "author": {
     "name": "Yanuka Deneth",
-    "email": "yanukadeneth99@gmail.com",
+    "email": "yanuka@asciix.com",
     "url": "https://linktr.ee/yanukadeneth99"
   },
-  "homepage": "https://github.com/yanukadeneth99/Starter-Template",
-  "bugs": {
-    "url": "https://github.com/yanukadeneth99/Starter-Template/issues",
-    "email": "yanukadeneth99@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yanukadeneth99/Starter-Template"
-  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanukadeneth99/startertemp-nextjs-hardhat-ts/issues"
+  },
+  "homepage": "https://github.com/yanukadeneth99/startertemp-nextjs-hardhat-ts#readme",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
