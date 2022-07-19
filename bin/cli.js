@@ -55,7 +55,11 @@ if (!installBDeps) process.exit(1);
 console.log("\x1b[34m%s\x1b[0m",`----- Clearing out Installation Directories`);
 const clearBin = runCommand(`cd ${repoName} && rm -rf bin`);
 const clearPackage = runCommand(`cd ${repoName} && rm -fv package.json`);
-if (!clearBin || !clearPackage) process.exit(1);
+const clearGithub = runCommand(`cd ${repoName} && rm -rf .github`);
+const clearCOC = runCommand(`cd ${repoName} && rm -fv CODE_OF_CONDUCT.md`);
+const clearC = runCommand(`cd ${repoName} && rm -fv CONTRIBUTING.md`);
+const clearL = runCommand(`cd ${repoName} && rm -fv LICENSE`);
+if (!clearBin || !clearPackage || clearGithub || clearCOC || clearC || clearL) process.exit(1);
 
 // Successfully Installed
 console.log('\x1b[32m%s\x1b[0m',`------ Successfully Installed All!`);
