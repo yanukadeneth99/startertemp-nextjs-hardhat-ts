@@ -1,3 +1,13 @@
+[![GitHub issues](https://img.shields.io/github/issues/yanukadeneth99/startertemp-nextjs-hardhat-ts)](https://github.com/yanukadeneth99/startertemp-nextjs-hardhat-ts/issues)
+[![GitHub license](https://img.shields.io/github/license/yanukadeneth99/startertemp-nextjs-hardhat-ts)](https://github.com/yanukadeneth99/startertemp-nextjs-hardhat-ts/blob/master/LICENSE)
+![Discord](https://img.shields.io/discord/847154458395541525)
+![GitHub forks](https://img.shields.io/github/forks/yanukadeneth99/startertemp-nextjs-hardhat-ts?style=social)
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40startertemp%2Fnextjs-hardhat-ts)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fyanukadeneth99%2Fstartertemp-nextjs-hardhat-ts)
+--
+![Twitter Follow](https://img.shields.io/twitter/follow/yanukadeneth99?style=social)
+![GitHub followers](https://img.shields.io/github/followers/yanukadeneth99?style=social)
+--
+
 # Next JS, Solidity Typescript Starter Template
 
 This is a starter template which you can use containing multiple installed libraries for quick setup. This template uses `pnpm` for installation instead of `yarn` or `npm` for performance and space benefits. You can read more about pnpm [here](https://pnpm.io/)
