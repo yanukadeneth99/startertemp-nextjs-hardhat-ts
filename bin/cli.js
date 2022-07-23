@@ -45,23 +45,31 @@ if (!pnpmPeer) process.exit(1);
 
 // Installing the Front-end dependacies
 console.log("\x1b[34m%s\x1b[0m",`----- Installing Frontend dependancies`);
-const installFDeps = runCommand(`cd ${repoName}/frontend && pnpm install`);
-if (!installFDeps) process.exit(1);
+const installFDeps1 = runCommand(`cd ${repoName}/frontend && pnpm install -D @testing-library/jest-dom @testing-library/react @types/node @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser autoprefixer eslint eslint-config-next eslint-config-prettier jest jest-environment-jsdom postcss prettier tailwindcss typescript`);
+const installFDeps2 = runCommand(`cd ${repoName}/frontend && pnpm install daisyui ethers next next-seo notistack react react-dom web3modal`);
+if (!installFDeps1 && !installFDeps2) process.exit(1);
 
 // Installing backend dependancies
 console.log("\x1b[34m%s\x1b[0m",`----- Installing Backend dependancies`);
-const installBDeps = runCommand(`cd ${repoName}/backend && pnpm install`);
-if (!installBDeps) process.exit(1);
+const installBDeps1 = runCommand(`cd ${repoName}/backend && pnpm install -D hardhat @nomicfoundation/hardhat-toolbox typescript ts-node chai @types/node @types/mocha @types/chai @nomicfoundation/hardhat-chai-matchers @nomicfoundation/hardhat-network-helpers @nomiclabs/hardhat-etherscan typechain @typechain/hardhat @typechain/ethers-v5 @nomiclabs/hardhat-ethers @nomiclabs/hardhat-waffle ethereum-waffle hardhat-gas-reporter solidity-coverage`);
+const installBDeps2 = runCommand(`cd ${repoName}/backend && pnpm install @openzeppelin/contracts dotenv`);
+if (!installBDeps1 && !installBDeps2) process.exit(1);
 
 // Clearing out installation files
 console.log("\x1b[34m%s\x1b[0m",`----- Clearing out Installation Directories`);
 const clearBin = runCommand(`cd ${repoName} && rm -rf bin`);
 const clearPackage = runCommand(`cd ${repoName} && rm -fv package.json`);
 const clearGithub = runCommand(`cd ${repoName} && rm -rf .github`);
+const clearGit = runCommand(`cd ${repoName} && rm -rf .git`);
 const clearCOC = runCommand(`cd ${repoName} && rm -fv CODE_OF_CONDUCT.md`);
 const clearC = runCommand(`cd ${repoName} && rm -fv CONTRIBUTING.md`);
 const clearL = runCommand(`cd ${repoName} && rm -fv LICENSE`);
-if (!clearBin || !clearPackage || clearGithub || clearCOC || clearC || clearL) process.exit(1);
+if (!clearBin && !clearPackage && !clearGithub && !clearCOC && !clearC && !clearL && !clearGit) process.exit(1);
+
+// Creating new Git
+console.log("\x1b[34m%s\x1b[0m",`----- Creating a new Git`);
+const newGit = runCommand(`cd ${repoName} && git init`);
+if (!newGit) process.exit(1);
 
 // Successfully Installed
 console.log('\x1b[32m%s\x1b[0m',`------ Successfully Installed All!`);
