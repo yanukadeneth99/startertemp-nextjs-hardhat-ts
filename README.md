@@ -45,7 +45,18 @@ npx @startertemp/nextjs-hardhat-ts my-app
 ### Back-end
 
 - [Hardhat/Soldity](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
+- [Hardhat-Toolbox](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-toolbox)
+- [Chai](https://www.chaijs.com/)
+- [@nomicfoundation/hardhat-chai-matchers](https://hardhat.org/hardhat-chai-matchers/docs/overview)
+- [@nomicfoundation/hardhat-network-helpers](https://hardhat.org/hardhat-network-helpers/docs/overview)
+- [@nomiclabs/hardhat-etherscan](https://www.npmjs.com/package/@nomiclabs/hardhat-etherscan)
+- [typechain](https://www.npmjs.com/package/typechain)
+- [@nomiclabs/hardhat-waffle](https://www.npmjs.com/package/@nomiclabs/hardhat-waffle)
+- [@nomiclabs/hardhat-ethers](https://www.npmjs.com/package/@nomiclabs/hardhat-ethers)
+- [hardhat-gas-reporter](https://www.npmjs.com/package/hardhat-gas-reporter)
+- [solidity-coverage](https://www.npmjs.com/package/solidity-coverage)
 - [@OpenZeppelin/Contracts](https://www.openzeppelin.com/contracts)
+- [dotenv](https://www.npmjs.com/package/dotenv)
 
 ## Contribution
 
