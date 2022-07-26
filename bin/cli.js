@@ -45,7 +45,7 @@ if (!pnpmPeer) process.exit(1);
 
 // Installing the Front-end dependacies
 console.log("\x1b[34m%s\x1b[0m",`----- Installing Frontend dependancies`);
-const installFDeps1 = runCommand(`cd ${repoName}/frontend && pnpm install -D @testing-library/jest-dom @testing-library/react @types/node @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser autoprefixer eslint eslint-config-next eslint-config-prettier jest jest-environment-jsdom postcss prettier tailwindcss typescript`);
+const installFDeps1 = runCommand(`cd ${repoName}/frontend && pnpm install -D @testing-library/jest-dom @testing-library/react @types/node @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser autoprefixer eslint eslint-config-next eslint-config-prettier jest jest-environment-jsdom postcss prettier tailwindcss typescript @mui/material @emotion/react @emotion/styled`);
 const installFDeps2 = runCommand(`cd ${repoName}/frontend && pnpm install daisyui ethers next next-seo notistack react react-dom web3modal`);
 if (!installFDeps1 && !installFDeps2) process.exit(1);
 

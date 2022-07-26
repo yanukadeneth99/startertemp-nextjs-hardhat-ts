@@ -1,6 +1,6 @@
 {
   "name": "@startertemp/nextjs-hardhat-ts",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "bin": "./bin/cli.js",
   "description": "A Starter Template for Next JS, TailwindCSS, Daisy UI frontend with Hardhat(Solidity) backend.",
   "repository": {
