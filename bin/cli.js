@@ -51,7 +51,7 @@ if (!installFDeps1 && !installFDeps2) process.exit(1);
 
 // Installing backend dependancies
 console.log("\x1b[34m%s\x1b[0m",`----- Installing Backend dependancies`);
-const installBDeps1 = runCommand(`cd ${repoName}/backend && pnpm install -D hardhat @nomicfoundation/hardhat-toolbox typescript ts-node chai @types/node @types/mocha @types/chai @nomicfoundation/hardhat-chai-matchers @nomicfoundation/hardhat-network-helpers @nomiclabs/hardhat-etherscan typechain @typechain/hardhat @typechain/ethers-v5 @nomiclabs/hardhat-ethers @nomiclabs/hardhat-waffle ethereum-waffle hardhat-gas-reporter solidity-coverage`);
+const installBDeps1 = runCommand(`cd ${repoName}/backend && pnpm install -D hardhat @nomicfoundation/hardhat-toolbox typescript ts-node chai @types/node @types/mocha @types/chai @nomicfoundation/hardhat-chai-matchers @nomicfoundation/hardhat-network-helpers @nomiclabs/hardhat-etherscan typechain @typechain/hardhat @typechain/ethers-v5 @nomiclabs/hardhat-ethers @nomiclabs/hardhat-waffle ethereum-waffle hardhat-gas-reporter solidity-coverage ethers @ethersproject/providers`);
 const installBDeps2 = runCommand(`cd ${repoName}/backend && pnpm install @openzeppelin/contracts dotenv`);
 if (!installBDeps1 && !installBDeps2) process.exit(1);
 
